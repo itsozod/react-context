@@ -1,0 +1,34 @@
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn_i {
+  margin: 10px;
+  padding: 6px;
+  border: none;
+  border-radius: 12px;
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+}
+.btn_d {
+  margin: 10px;
+  padding: 6px;
+  border: none;
+  border-radius: 12px;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+}
+.incre {
+  padding: 6px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 12px;
+  margin: 20px;
+}
+.inputContainer {
+  display: flex;
+  justify-content: center;
+}

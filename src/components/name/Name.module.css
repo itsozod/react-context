@@ -1,0 +1,12 @@
+.inputContext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nameChanger {
+  padding: 6px;
+  background-color: lightgoldenrodyellow;
+  border: none;
+  border-radius: 12px;
+}
