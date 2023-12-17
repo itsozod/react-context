@@ -1,0 +1,41 @@
+{
+  "countries": [
+    {
+      "id": 1,
+      "img": "usa-flag.jpg",
+      "title": "United States of America",
+      "capital": "Washington, D.C.",
+      "population": "336,000,000"
+    },
+    {
+      "id": 2,
+      "title": "United Arab Emirates",
+      "capital": "Abu Dhabi",
+      "population": "336,000,000"
+    },
+    {
+      "id": 3,
+      "title": "Netherlands",
+      "capital": "Amsterdam",
+      "population": "336,000,000"
+    },
+    {
+      "id": 4,
+      "title": "Vietnam",
+      "capital": "Hanoi",
+      "population": "336,000,000"
+    },
+    {
+      "id": 5,
+      "title": "Philippines",
+      "capital": "Manila",
+      "population": "336,000,000"
+    },
+    {
+      "id": 6,
+      "title": "Tajikistan",
+      "capital": "Dushanbe",
+      "population": "336,000,000"
+    }
+  ]
+}
