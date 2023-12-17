@@ -2,37 +2,42 @@
   "countries": [
     {
       "id": 1,
-      "img": "usa-flag.jpg",
+      "img": "usa-flag.webp",
       "title": "United States of America",
       "capital": "Washington, D.C.",
       "population": "336,000,000"
     },
     {
       "id": 2,
+      "img": "uae flag.jpg",
       "title": "United Arab Emirates",
       "capital": "Abu Dhabi",
       "population": "336,000,000"
     },
     {
       "id": 3,
+      "img": "ntnflag.png",
       "title": "Netherlands",
       "capital": "Amsterdam",
       "population": "336,000,000"
     },
     {
       "id": 4,
+      "img": "vietnam-flag.png",
       "title": "Vietnam",
       "capital": "Hanoi",
       "population": "336,000,000"
     },
     {
       "id": 5,
+      "img": "philippines-flag.webp",
       "title": "Philippines",
       "capital": "Manila",
       "population": "336,000,000"
     },
     {
       "id": 6,
+      "img": "tajikistan-flag.webp",
       "title": "Tajikistan",
       "capital": "Dushanbe",
       "population": "336,000,000"

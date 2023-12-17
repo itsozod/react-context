@@ -29,11 +29,6 @@ function App() {
         <Random />
         <Main />
         <Name />
-        {datas.map((data) => (
-          <div key={data.id}>
-            <img src={data.img} alt="Image" />
-          </div>
-        ))}
       </ChangeName.Provider>
     </>
   );
