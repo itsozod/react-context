@@ -3,10 +3,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 10px;
 }
 .search_input {
-    padding: 8px;
-    border: none;
-    border-radius: 12px;
-    outline: none;
+  padding: 8px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
 }

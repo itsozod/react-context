@@ -1,7 +1,13 @@
+/* eslint-disable react/prop-types */
 import styles from "./Card.module.css";
 
-const Card = () => {
-  return <div className={styles.card}>Card</div>;
+export const Card = ({ data }) => {
+  return (
+    <div className={styles.card}>
+      <h3>{data.title}</h3>
+      <img className={styles.card_img} src={data.img} alt={data.title} />
+      <p>{data.capital}</p>
+      <p>{data.population}</p>
+    </div>
+  );
 };
-
-export default Card;

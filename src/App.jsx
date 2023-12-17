@@ -4,6 +4,7 @@ import Main from "./components/mainContent/Main";
 import Random from "./components/randomNumber/Random";
 import Name from "./components/name/Name";
 import { createContext, useState, useEffect } from "react";
+import { Card } from "./components/card/Card";
 export const ChangeName = createContext(null);
 function App() {
   const [value, setValue] = useState("");
@@ -15,7 +16,6 @@ function App() {
         const response = await fetch("http://localhost:3000/countries");
         const data = await response.json();
         setDatas(data);
-        console.log(data);
       } catch (error) {
         console.error(error);
       }
@@ -29,6 +29,11 @@ function App() {
         <Random />
         <Main />
         <Name />
+        <div className="card-container">
+          {datas.map((data) => (
+            <Card key={data.id} data={data} />
+          ))}
+        </div>
       </ChangeName.Provider>
     </>
   );

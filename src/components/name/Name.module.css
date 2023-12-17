@@ -3,10 +3,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 10px;
+  padding: 10px;
 }
 .nameChanger {
   padding: 6px;
   background-color: lightgoldenrodyellow;
   border: none;
   border-radius: 12px;
+  margin-top: 20px;
 }
