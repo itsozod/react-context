@@ -5,10 +5,13 @@ import Random from "./components/randomNumber/Random";
 import Name from "./components/name/Name";
 import { createContext, useState, useEffect } from "react";
 import { Card } from "./components/card/Card";
+import { Info } from "./components/info/Info";
 export const ChangeName = createContext(null);
 function App() {
   const [value, setValue] = useState("");
   const [datas, setDatas] = useState([]);
+  const [details, setDetails] = useState({});
+  const [view, setView] = useState(null);
 
   useEffect(() => {
     const showCountries = async () => {
@@ -22,6 +25,17 @@ function App() {
     };
     showCountries();
   }, []);
+
+  const handleDetails = async (id) => {
+    try {
+      const response = await fetch(`http://localhost:3000/countries/${id}`);
+      const detailsData = await response.json();
+      setDetails(detailsData);
+      setView((prev) => (prev === id ? null : id));
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <>
       <ChangeName.Provider value={[value, setValue]}>
@@ -31,7 +45,13 @@ function App() {
         <Name />
         <div className="card-container">
           {datas.map((data) => (
-            <Card key={data.id} data={data} />
+            <Card
+              key={data.id}
+              data={data}
+              onClick={() => handleDetails(data.id)}
+            >
+              {view === data.id && <Info details={details} />}
+            </Card>
           ))}
         </div>
       </ChangeName.Provider>

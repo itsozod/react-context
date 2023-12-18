@@ -12,14 +12,14 @@
       "img": "uae flag.jpg",
       "title": "United Arab Emirates",
       "capital": "Abu Dhabi",
-      "population": "336,000,000"
+      "population": "10,223,282"
     },
     {
       "id": 3,
       "img": "ntnflag.png",
       "title": "Netherlands",
       "capital": "Amsterdam",
-      "population": "336,000,000"
+      "population": "17,240,392"
     },
     {
       "id": 4,
@@ -33,14 +33,14 @@
       "img": "philippines-flag.webp",
       "title": "Philippines",
       "capital": "Manila",
-      "population": "336,000,000"
+      "population": "99,777,704"
     },
     {
       "id": 6,
       "img": "tajikistan-flag.webp",
       "title": "Tajikistan",
       "capital": "Dushanbe",
-      "population": "336,000,000"
+      "population": "10,134,806"
     }
   ]
 }
