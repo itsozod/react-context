@@ -2,10 +2,10 @@
 import styles from "./Card.module.css";
 import { MdDelete } from "react-icons/md";
 
-export const Card = ({ data, children, onClick }) => {
+export const Card = ({ data, children, onClick, onDelete }) => {
   return (
     <div className={styles.card}>
-      <MdDelete className={styles.deleteCard} />
+      {/* <MdDelete className={styles.deleteCard} onClick={onDelete} /> */}
       <img className={styles.card_img} src={data.img} alt={data.title} />
       {children}
       <button onClick={onClick} className={styles.requestBtn}>

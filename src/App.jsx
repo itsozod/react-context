@@ -42,6 +42,19 @@ function App() {
   const submitDatas = (e) => {
     e.preventDefault();
   };
+
+  const deleteCard = async (id) => {
+    console.log("Deleted");
+    try {
+      const response = await fetch(`http://localhost:3000/countries/${id}`, {
+        method: "DELETE",
+      });
+      const detailsData = await response.json();
+      console.log(detailsData);
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <>
       <ChangeName.Provider value={[value, setValue]}>
@@ -60,6 +73,7 @@ function App() {
               key={data.id}
               data={data}
               onClick={() => handleDetails(data.id)}
+              onDelete={() => deleteCard(data.id)}
             >
               {view === data.id && <Info details={details} />}
             </Card>
