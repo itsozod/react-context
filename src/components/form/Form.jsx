@@ -2,10 +2,10 @@
 import styles from "./Form.module.css";
 import { FaDeleteLeft } from "react-icons/fa6";
 
-export const Form = ({ onClick }) => {
+export const Form = ({ onClick, onSubmit }) => {
   return (
     <div className={styles.form_container}>
-      <form className={styles.form}>
+      <form className={styles.form} onSubmit={onSubmit}>
         <FaDeleteLeft className={styles.remove} onClick={onClick} />
         <label>Image:</label>
         <input type="file" accept="image/*" />

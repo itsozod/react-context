@@ -23,3 +23,9 @@
   background-color: lightcoral;
   font-size: 16px;
 }
+.deleteCard {
+  position: absolute;
+  cursor: pointer;
+  top: 70%;
+  font-size: 20px;
+}

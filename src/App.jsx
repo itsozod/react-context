@@ -39,6 +39,9 @@ function App() {
     }
   };
   console.log(view);
+  const submitDatas = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <ChangeName.Provider value={[value, setValue]}>
@@ -62,7 +65,12 @@ function App() {
             </Card>
           ))}
         </div>
-        {modal && <Form onClick={() => setModal(false)} />}
+        {modal && (
+          <Form
+            onClick={() => setModal(false)}
+            onSubmit={(e) => submitDatas(e)}
+          />
+        )}
         {/* <Form /> */}
       </ChangeName.Provider>
     </>
