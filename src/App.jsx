@@ -6,12 +6,14 @@ import Name from "./components/name/Name";
 import { createContext, useState, useEffect } from "react";
 import { Card } from "./components/card/Card";
 import { Info } from "./components/info/Info";
+import { Form } from "./components/form/Form";
 export const ChangeName = createContext(null);
 function App() {
   const [value, setValue] = useState("");
   const [datas, setDatas] = useState([]);
   const [details, setDetails] = useState({});
   const [view, setView] = useState(null);
+  const [modal, setModal] = useState(false);
 
   useEffect(() => {
     const showCountries = async () => {
@@ -36,6 +38,7 @@ function App() {
       console.error(error);
     }
   };
+  console.log(view);
   return (
     <>
       <ChangeName.Provider value={[value, setValue]}>
@@ -43,6 +46,11 @@ function App() {
         <Random />
         <Main />
         <Name />
+        <div className="btn-container">
+          <button className="country-btn" onClick={() => setModal(true)}>
+            Add Country
+          </button>
+        </div>
         <div className="card-container">
           {datas.map((data) => (
             <Card
@@ -54,6 +62,8 @@ function App() {
             </Card>
           ))}
         </div>
+        {modal && <Form onClick={() => setModal(false)} />}
+        {/* <Form /> */}
       </ChangeName.Provider>
     </>
   );

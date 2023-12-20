@@ -7,3 +7,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.country-btn {
+  padding: 6px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
